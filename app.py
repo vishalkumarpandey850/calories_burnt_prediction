@@ -4,8 +4,8 @@ import numpy as np
 import pickle
 
 # Load model
-with open("model.pkl", "rb") as file:
-    model = pickle.load(file)
+import joblib
+model = joblib.load('model_compressed.pkl')
 
 # App title
 st.title("Calories Burnt Prediction App")
