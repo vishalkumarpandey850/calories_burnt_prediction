@@ -17,7 +17,7 @@ gender = st.sidebar.selectbox("Gender", ["Female", "Male"])
 age = st.sidebar.slider("Age", 10, 80, 25)
 height = st.sidebar.slider("Height (cm)", 120, 210, 170)
 weight = st.sidebar.slider("Weight (kg)", 30, 150, 70)
-duration = st.sidebar.slider("Duration (min)", 5, 120, 30)
+duration = st.sidebar.slider("workout_Duration (min)", 5, 120, 30)
 heart_rate = st.sidebar.slider("Heart Rate", 60, 180, 100)
 body_temp = st.sidebar.slider("Body Temperature (°C)", 35.0, 42.0, 37.0)
 
@@ -36,3 +36,4 @@ if st.checkbox("Show Model Inputs"):
     st.write(pd.DataFrame(input_data, columns=[
         "Gender", "Age", "Height", "Weight", "Duration", "Heart Rate", "Body Temp"
     ]))
+
